@@ -1,5 +1,4 @@
 import DashBoard from "@/components/DashBoard";
-import DashboardTable from "@/components/CardList";
 
 export const metadata = {
   title: {
@@ -11,7 +10,11 @@ export const metadata = {
 };
 
 const Dashboard = () => {
-  return <DashBoard />;
+  return (
+    <>
+      <DashBoard />
+    </>
+  );
 };
 
 export default Dashboard;

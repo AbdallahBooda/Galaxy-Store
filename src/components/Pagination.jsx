@@ -4,7 +4,7 @@ const Pagination = () => {
   return (
     <>
       <nav aria-label="Page navigation example" className="p-6" dir="ltr">
-        <ul className="inline-flex -space-x-px text-sm">
+        <ul className="inline-flex -space-x-px text-sm whitespace-nowrap w-full overflow-x-auto">
           <li>
             <Link
               href="/"

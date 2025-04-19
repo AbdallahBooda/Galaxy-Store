@@ -11,7 +11,7 @@ const Employee = () => {
       <div className="block max-w p-6 m-6 bg-white border border-gray-200 rounded-lg shadow-2xl">
         <div className="flex items-center justify-between mb-4">
         <Link
-          href=""
+          href="employee/create"
           className="focus:outline-none text-white bg-[#746F69] hover:bg-[#9d794c] focus:ring-4 focus:ring-[#9d794c] font-medium rounded-lg text-sm px-5 py-2.5 me-2"
         >
           اضافة موظف

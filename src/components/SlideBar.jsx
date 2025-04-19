@@ -35,7 +35,7 @@ const SlideBar = () => {
             </li>
             <li>
               <Link
-                href="#"
+                href="/pos/salebill/create"
                 className="flex items-center p-2  text-[#8A8680] font-bold rounded-lg  hover:bg-gray-100 "
               >
                 <svg
@@ -238,7 +238,7 @@ const SlideBar = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/purchases_reports"
                     className="flex items-center w-full p-2 text-[#8A8680]  transition duration-75 rounded-lg pl-11 group hover:bg-gray-100  "
                   >
                     تقارير المشتريات

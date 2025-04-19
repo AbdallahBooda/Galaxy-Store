@@ -5,18 +5,18 @@ import Search from "./Search";
 const SalesReports = () => {
   return (
     <>
-      <h1 className="m-6 mt-16 font-semibold text-lg text-gray-900">
+      <h1 className="m-6 mt-24 font-semibold text-lg text-gray-900">
         تصنيف الموظفين{" "}
       </h1>
       <div className="block max-w p-6 m-6 bg-white border border-gray-200 rounded-lg shadow-2xl">
-        <div className="flex items-center justify-between mb-4">
-          <form className="flex items-center">
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">
+          <form className="flex flex-col sm:flex-row sm:items-center gap-4 w-full">
             <div
               id="date-range-picker"
               data-rangepicker
-              className="flex items-center "
+              className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4"
             >
-              <div className="relative">
+              <div className="relative w-full sm:w-auto">
                 <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                   <svg
                     className="w-4 h-4 text-gray-500"
@@ -32,12 +32,12 @@ const SalesReports = () => {
                   id="datepicker-range-start"
                   name="start"
                   type="text"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-32 ps-10 p-2.5"
-                  placeholder=" date start"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full sm:w-32 ps-10 p-2.5"
+                  placeholder="date start"
                 />
               </div>
-              <span className="mx-4 text-gray-500">to</span>
-              <div className="relative">
+              <span className="text-gray-500">to</span>
+              <div className="relative w-full sm:w-auto">
                 <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                   <svg
                     className="w-4 h-4 text-gray-500"
@@ -53,19 +53,23 @@ const SalesReports = () => {
                   id="datepicker-range-end"
                   name="end"
                   type="text"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-32 ps-10 p-2.5"
-                  placeholder=" date end"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full sm:w-32 ps-10 p-2.5"
+                  placeholder="date end"
                 />
               </div>
             </div>
             <button
               type="button"
-              className="focus:outline-none m-3 text-white bg-[#746F69] hover:bg-[#9d794c] focus:ring-4 focus:ring-[#9d794c] font-medium rounded-lg text-sm px-5 py-2.5 me-2"
+              className="focus:outline-none text-white bg-[#746F69] hover:bg-[#9d794c] focus:ring-4 focus:ring-[#9d794c] font-medium rounded-lg text-sm px-5 py-2.5"
             >
               Submit
             </button>
           </form>
-          <Search />
+
+          {/* Search component placed below form on mobile, side on desktop */}
+          <div className="w-full md:w-auto">
+            <Search />
+          </div>
         </div>
 
         <div className="relative overflow-x-auto">
