@@ -30,7 +30,7 @@ const MobileMenu = () => {
           </li>
           <li>
             <Link
-              href="#"
+              href="/pos/salebill/create"
               className="flex items-center p-2  text-[#8A8680] font-bold rounded-lg  hover:bg-gray-100 "
             >
               <svg
@@ -184,63 +184,63 @@ const MobileMenu = () => {
           </li>
 
           <li>
-              <button
-                type="button"
-                onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex items-center w-full p-2 text-base text-[#8A8680] font-bold transition duration-75 rounded-lg group hover:bg-gray-100  "
-                aria-controls="dropdown-example"
-                data-collapse-toggle="dropdown-example"
+            <button
+              type="button"
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+              className="flex items-center w-full p-2 text-base text-[#8A8680] font-bold transition duration-75 rounded-lg group hover:bg-gray-100  "
+              aria-controls="dropdown-example"
+              data-collapse-toggle="dropdown-example"
+            >
+              <svg
+                className="flex-shrink-0 w-6 h-6 text-[#8A8680] transition duration-75 group-hover:text-[#8A8680] "
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 18 21"
               >
-                <svg
-                  className="flex-shrink-0 w-6 h-6 text-[#8A8680] transition duration-75 group-hover:text-[#8A8680] "
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 18 21"
-                >
-                  <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
-                </svg>
-                <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">
-                  التقارير
-                </span>
-                <svg
-                  className="w-3 h-3"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </button>
-              <ul
-                id="dropdown-example"
-                className={`py-2 space-y-2 ${dropdownOpen ? "" : "hidden"}`}
+                <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+              </svg>
+              <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">
+                التقارير
+              </span>
+              <svg
+                className="w-3 h-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
               >
-                <li>
-                  <Link
-                    href="/sales-reports"
-                    className="flex items-center w-full p-2 text-[#8A8680]  transition duration-75 rounded-lg pl-11 group hover:bg-gray-100  "
-                  >
-                    تقارير المبيعات
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="flex items-center w-full p-2 text-[#8A8680]  transition duration-75 rounded-lg pl-11 group hover:bg-gray-100  "
-                  >
-                    تقارير المشتريات
-                  </Link>
-                </li>
-              </ul>
-            </li>
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+            <ul
+              id="dropdown-example"
+              className={`py-2 space-y-2 ${dropdownOpen ? "" : "hidden"}`}
+            >
+              <li>
+                <Link
+                  href="/sales-reports"
+                  className="flex items-center w-full p-2 text-[#8A8680]  transition duration-75 rounded-lg pl-11 group hover:bg-gray-100  "
+                >
+                  تقارير المبيعات
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/purchases_reports"
+                  className="flex items-center w-full p-2 text-[#8A8680]  transition duration-75 rounded-lg pl-11 group hover:bg-gray-100  "
+                >
+                  تقارير المشتريات
+                </Link>
+              </li>
+            </ul>
+          </li>
 
           <li>
             <Link

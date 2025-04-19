@@ -1,8 +1,11 @@
+import PurchaseInvoicesCreate from "@/components/PurchaseInvoicesCreate";
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <>
+      <PurchaseInvoicesCreate />
+    </>
+  );
+};
 
-export default page
+export default page;

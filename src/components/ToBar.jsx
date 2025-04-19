@@ -36,7 +36,7 @@ const ToBar = () => {
 
             {/* Logo */}
             <Link href="/" className="flex ms-2 md:me-24">
-              <Image src="/logo.png" alt="Logo" width={40} height={40} />
+              <Image src="/logo.png" alt="Logo" loading="lazy" width={40} height={40} />
               <span className="self-center text-xl font-bold whitespace-nowrap ms-2">
                 Galaxy Store
               </span>

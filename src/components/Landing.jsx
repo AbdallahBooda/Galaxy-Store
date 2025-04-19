@@ -12,8 +12,8 @@ const Landing = () => {
         </div> */}
 
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-          <center>
-          <Image src="/logo.png" alt="Logo" width={210} height={200} />
+          <center className="mt-10">
+          <Image src="/logo.png" alt="Logo" loading="lazy" width={210} height={200} />
 
             <br />
             <h1 className="text-5xl text-white mb-2">Galaxy Store</h1>
