@@ -13,12 +13,22 @@ const Landing = () => {
 
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
           <center className="mt-10">
-          <Image src="/logo.png" alt="Logo" loading="lazy" width={210} height={200} />
+            <Image
+              src="/logo.webp"
+              alt="Logo"
+              width={210}
+              height={200}
+              priority
+              loading="eager"
+            />
 
             <br />
             <h1 className="text-5xl text-white mb-2">Galaxy Store</h1>
             <br />
-            <Link href="/login" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-bold rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">
+            <Link
+              href="/login"
+              className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-bold rounded-full text-sm px-5 py-2.5 me-2 mb-2 "
+            >
               Log in
             </Link>
           </center>
