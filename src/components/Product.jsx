@@ -2,7 +2,7 @@ import Link from "next/link";
 import Pagination from "./Pagination";
 import Search from "./Search";
 
-const ProductManagement = () => {
+const Product = () => {
   return (
     <>
       <h1 className="m-6 mt-24 font-semibold text-lg text-gray-900">
@@ -144,4 +144,4 @@ const ProductManagement = () => {
   );
 };
 
-export default ProductManagement;
+export default Product;
