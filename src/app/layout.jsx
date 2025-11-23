@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
+import ClientLayout from "@/components/ClientLayout";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +15,6 @@ const geistMono = localFont({
 
 export const metadata = {
   title: {
-    // absolute: "",
     default: "Home",
     template: "%s",
   },
@@ -28,15 +27,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex flex-col md:flex-row">
-          <div className="w-full md:w-64">
-            {/* Sidebar - full width on small screens, fixed width on md+ */}
-            <NavBar />
-          </div>
-          <main className="flex-1  bg-gray-100 min-h-screen">
-            {children}
-          </main>
-        </div>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
