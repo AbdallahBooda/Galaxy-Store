@@ -48,7 +48,7 @@ const Payment = () => {
                 name="paid_amount"
                 id="paid_amount"
                 className="w-full border border-gray-300 rounded px-2 py-1"
-                defaultdefaultValue="0"
+                defaultValue="0"
               />
             </div>
 
